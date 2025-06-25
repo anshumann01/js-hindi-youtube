@@ -34,10 +34,10 @@
 // console.log("2"===2) //false
 
 //Data Types
-//primitive data types - 7 types (call by value)
+//primitive data types - 7 types (call by value) - Copy provide ki jaati hai
 //String, Number, boolean, null, undefined, Symbol, BigInt
 
-//non-primitive/reference type (call by reference)
+//non-primitive/reference type (call by reference) - Address provide kiya jata hai
 //Arrays, Objects, Functions
 
 // const Id = Symbol('123');
@@ -52,3 +52,18 @@
 
 // const number  = 238563297562379562n
 // console.log(typeof number) //bigint
+
+//Stack (Primitive) , Heap (Non - Primitive)
+
+//String
+
+const Name = "Anshuman"
+const NewName = Name.substring(0,4); //Ansh
+const sliceName = Name.slice(-5,5) //hu
+
+console.log(NewName);
+console.log(sliceName);
+
+console.log(Name.includes("sh")) //true
+
+console.log(Name.split("a")); //['Anshum','n']
