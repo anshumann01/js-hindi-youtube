@@ -57,13 +57,36 @@
 
 //String
 
-const Name = "Anshuman"
-const NewName = Name.substring(0,4); //Ansh
-const sliceName = Name.slice(-5,5) //hu
+// const Name = "Anshuman"
+// const NewName = Name.substring(0,4); //Ansh
+// const sliceName = Name.slice(-5,5) //hu
 
-console.log(NewName);
-console.log(sliceName);
+// console.log(NewName);
+// console.log(sliceName);
 
-console.log(Name.includes("sh")) //true
+// console.log(Name.includes("sh")) //true
 
-console.log(Name.split("a")); //['Anshum','n']
+// console.log(Name.split("a")); //['Anshum','n']
+
+// const balance = new Number(100)
+// console.log(balance) //[Number: 100]
+
+// console.log(balance.toFixed(2)) //100.00
+
+// const newBalance=1000000
+// console.log(newBalance.toLocaleString()); // 1,000,000
+// console.log(newBalance.toLocaleString('en-IN')); // 10,00,000
+
+// const price = 1223.4533
+// console.log(price.toPrecision(6)); //1223.45
+
+//************************Maths***************************
+
+// Math.abs, Math.round(), Math.ceil(), Math.floor(), Math.sqrt(), Math.min(), Math.max(), Math.random()
+
+console.log(Math.ceil(Math.random()*6)) //Dice Game
+
+const min=10
+const max=20
+
+console.log(Math.floor(Math.random()*(max-min+1))+min)
