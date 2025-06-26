@@ -102,20 +102,73 @@ let myDate = new Date();
 let myCreatedDate = new Date(2023,0,23);
 // console.log(myCreatedDate.toLocaleString()); //Mon Jan 23 2023
 
-let Time = myCreatedDate.getTime();
+// let Time = myCreatedDate.getTime();
 // console.log(Time);
 
-let myNewDate = new Date(2023,0,24);
-console.log(myNewDate.toLocaleString());
+// let myNewDate = new Date(2023,0,24);
+// console.log(myNewDate.toLocaleString());
 
-let newTime = myNewDate.getTime();
+// let newTime = myNewDate.getTime();
 
-console.log(newTime-Time); //86400000 ms
+// console.log(newTime-Time); //86400000 ms
 
-console.log(typeof myNewDate); //object
+// console.log(typeof myNewDate); //object
 
-console.log(myDate.toLocaleString('default' , {
-    weekday:"long"
-}
-));    //thursday
+// console.log(myDate.toLocaleString('default' , {
+//     weekday:"long"
+// }
+// ));    //thursday
+
+/***************************************** ARRAYS **********************************************/
+
+//Arrays in JS is dynamic in size 
+
+// let myArr = [0,1,2,3,"Hello",[1,2]]
+// console.log(myArr[4]);
+
+// myArr.push(6);
+
+// console.log(myArr); //[ 0, 1, 2, 3, 'Hello', [ 1, 2 ], 6 ]
+
+// myArr.pop();
+// console.log(myArr); //[ 0, 1, 2, 3, 'Hello', [ 1, 2 ] ]
+
+// myArr.unshift(1);
+// console.log(myArr); //[ 1, 0, 1, 2, 3, 'Hello', [ 1, 2 ] ] => 1 added to the starting of the array
+
+// myArr.shift();
+// console.log(myArr); //[ 0, 1, 2, 3, 'Hello', [ 1, 2 ] ] => 1 removed from the array, which was at the zeroth index
+
+// console.log(myArr.includes(1)); //true
+// console.log(myArr.indexOf(1)); //1
+
+// const newArr = myArr.join();
+// console.log(newArr); //0,1,2,3,Hello,1,2 
+// console.log(typeof newArr); //string
+
+let marvel_heroes = ["ironman","thor","hulk"]
+let dc_heroes = ["superman","flash","batman"]
+
+// console.log(marvel_heroes.push(dc_heroes));  //4 - length of array
+
+// marvel_heroes.push(dc_heroes);
+// console.log(marvel_heroes); //[ 'ironman', 'thor', 'hulk', [ 'superman', 'flash', 'batman' ] ] - added dc_heroes as a single element i.e whole array
+
+// marvel_heroes.concat(dc_heroes);
+// console.log(marvel_heroes); // [ 'ironman', 'thor', 'hulk' ]
+
+// let all_heroes = marvel_heroes.concat(dc_heroes);
+// console.log(all_heroes); //[ 'ironman', 'thor', 'hulk', 'superman', 'flash', 'batman' ]
+
+// const all_new_heroes = [...marvel_heroes,...dc_heroes];
+// console.log(all_new_heroes); //[ 'ironman', 'thor', 'hulk', 'superman', 'flash', 'batman' ]
+
+console.log(Array.isArray("Anshuman"));
+console.log(Array.from("Anshuman"));
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1,score2,score3));
 
