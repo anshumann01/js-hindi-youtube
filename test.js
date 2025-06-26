@@ -1,5 +1,5 @@
 // console.log("Hello");
-// console.log(typeof "Hello");
+// console.log(typeof "Hello"); //string
 
 // console.log(typeof null);
 // console.log(typeof undefined);
@@ -84,9 +84,38 @@
 
 // Math.abs, Math.round(), Math.ceil(), Math.floor(), Math.sqrt(), Math.min(), Math.max(), Math.random()
 
-console.log(Math.ceil(Math.random()*6)) //Dice Game
+// console.log(Math.ceil(Math.random()*6)) //Dice Game
 
-const min=10
-const max=20
+// const min=10
+// const max=20
 
-console.log(Math.floor(Math.random()*(max-min+1))+min)
+// console.log(Math.floor(Math.random()*(max-min+1))+min) //Range between min and max
+
+/*************************************Date and Time********************************************/
+
+let myDate = new Date();
+// console.log(myDate); //2025-06-26T05:58:34.005Z
+// console.log(myDate.toDateString()); //Thu Jun 26 2025
+// console.log(myDate.toLocaleString()); //6/26/2025, 5:59:49 AM
+// console.log(myDate.toLocaleDateString()); //6/26/2025
+
+let myCreatedDate = new Date(2023,0,23);
+// console.log(myCreatedDate.toLocaleString()); //Mon Jan 23 2023
+
+let Time = myCreatedDate.getTime();
+// console.log(Time);
+
+let myNewDate = new Date(2023,0,24);
+console.log(myNewDate.toLocaleString());
+
+let newTime = myNewDate.getTime();
+
+console.log(newTime-Time); //86400000 ms
+
+console.log(typeof myNewDate); //object
+
+console.log(myDate.toLocaleString('default' , {
+    weekday:"long"
+}
+));    //thursday
+
