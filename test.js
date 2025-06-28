@@ -222,5 +222,75 @@ const obj3 = {...obj1,...obj2};
 // // console.log(name); //Anshuman
 
 // const {email : mail} = obj3
-// console.log(mail); //anshuman.gupta2037@gmail.com  //We can shorten the name email => mail    
+// console.log(mail); //anshuman.gupta2037@gmail.com  //We can shorten the name email => mail   
+
+
+// ******************************************* FUNCTIONS *************************************************
+
+function sayMyName() {
+    console.log('A');
+    console.log('N');
+    console.log('S');
+    console.log('H');
+    console.log('U');
+    console.log('M');
+    console.log('A');
+    console.log('N');
+}
+
+// sayMyName //without brackets this is not execution of function this is only reference of function
+
+// sayMyName() // Now it is function execution 
+
+// function printAddition(number1,number2) {
+//     console.log(number1+number2);
+// }
+// const result = printAddition(3,5);
+// console.log(result); //undefined
+
+// function returnAddition(number1,number2) {
+//     return number1+number2;
+// }
+// console.log(returnAddition(3,5)); //8
+
+// function userLoggedIn(username) {
+//     return `${username} just logged in`;
+// }
+// console.log(userLoggedIn('Anshuman')); //Anshuman just logged in
+
+// console.log(userLoggedIn()); //undefined just logged in
+
+// function printNumbers(num1) {
+//     return num1;
+// }
+// console.log(printNumbers(200,400,500)); //200 - it will print only single value i.e first value
+
+function printNumbers(...num1) {
+    return num1;
+}
+// console.log(printNumbers(200,400,500)); //[ 200, 400, 500 ]- it will print all values by just adding ... before our paramenter
+
+// const obj = {
+//     username : "Anshuman",
+//     price : "100"
+// }
+
+// function handleObject(anyObject) {
+//     return `Username is ${anyObject.username} and price is ${anyObject.price}`
+// }
+// console.log(handleObject(obj)); //Username is Anshuman and price is 100 - METHOD 1
+// console.log(handleObject({
+//     username:"Sanni Dancer",
+//     price:"20"
+// }));  //Username is Sanni Dancer and price is 20
+
+const arr = [100,200,300,400,500]
+
+function handleArray(anyArray) {
+    return anyArray[1];
+}
+
+// console.log(handleArray(arr)); //200
+ 
+
 
