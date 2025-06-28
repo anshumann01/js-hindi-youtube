@@ -1,8 +1,8 @@
 // console.log("Hello");
 // console.log(typeof "Hello"); //string
 
-// console.log(typeof null);
-// console.log(typeof undefined);
+// console.log(typeof null); //object
+// console.log(typeof undefined); //undefined
 
 // let num = "123";
 // console.log(typeof num);
@@ -163,12 +163,64 @@ let dc_heroes = ["superman","flash","batman"]
 // const all_new_heroes = [...marvel_heroes,...dc_heroes];
 // console.log(all_new_heroes); //[ 'ironman', 'thor', 'hulk', 'superman', 'flash', 'batman' ]
 
-console.log(Array.isArray("Anshuman"));
-console.log(Array.from("Anshuman"));
+// console.log(Array.isArray("Anshuman"));
+// console.log(Array.from("Anshuman"));
 
-let score1 = 100
-let score2 = 200
-let score3 = 300
+// let score1 = 100
+// let score2 = 200
+// let score3 = 300
 
-console.log(Array.of(score1,score2,score3));
+// console.log(Array.of(score1,score2,score3));
+
+// *****************************************Objects*********************************************************
+
+const obj1 = new Object();
+
+obj1.name = "Anshuman";
+obj1.email = "anshuman.gupta2037@gmail.com";
+
+// console.log(obj1); //{ name: 'Anshuman', email: 'anshuman.gupta2037@gmail.com' }
+
+const obj2 = new Object();
+
+obj2.mobile = "9149132230";
+obj2.City = "Budaun";
+
+// const obj3 = Object.assign({},obj1,obj2);
+// console.log(obj3);
+ //{
+//   name: 'Anshuman',
+//   email: 'anshuman.gupta2037@gmail.com',
+//   mobile: '9149132230',
+//   City: 'Budaun'
+// }
+
+
+const obj3 = {...obj1,...obj2};
+// console.log(obj3);
+ //{
+//   name: 'Anshuman',
+//   email: 'anshuman.gupta2037@gmail.com',
+//   mobile: '9149132230',
+//   City: 'Budaun'
+// }
+
+// console.log(Object.keys(obj3)); //[ 'name', 'email', 'mobile', 'City' ]
+// console.log(Object.values(obj3)); //[ 'Anshuman', 'anshuman.gupta2037@gmail.com', '9149132230', 'Budaun' ]
+// console.log(Object.entries(obj3));
+//[
+//   [ 'name', 'Anshuman' ],
+//   [ 'email', 'anshuman.gupta2037@gmail.com' ],
+//   [ 'mobile', '9149132230' ],
+//   [ 'City', 'Budaun' ]
+// ]
+
+// console.log(obj3.hasOwnProperty('name')); //true
+
+
+// const {name} = obj3
+// // console.log(name); //Anshuman
+
+// const {email : mail} = obj3
+// console.log(mail); //anshuman.gupta2037@gmail.com  //We can shorten the name email => mail    
 
