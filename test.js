@@ -284,21 +284,21 @@ function printNumbers(...num1) {
 //     price:"20"
 // }));  //Username is Sanni Dancer and price is 20
 
-const arr = [100,200,300,400,500]
+// const arr = [100,200,300,400,500]
 
-function handleArray(anyArray) {
-    return anyArray[1];
-}
+// function handleArray(anyArray) {
+//     return anyArray[1];
+// }
 
 // console.log(handleArray(arr)); //200
 
 // ******************************************* Scopes in JS ***************************************************
 
-if(true) {
-    const a = 10
-    let b = 20
-    var c = 30
-}
+// if(true) {
+//     const a = 10
+//     let b = 20
+//     var c = 30
+// }
 
 // console.log(a); //ReferenceError: a is not defined
 // console.log(b); //ReferenceError: b is not defined
@@ -319,16 +319,16 @@ if(true) {
 // }
 // printName() //Hello undefined welcome to the website
 
-const user = {
-    username: "hitesh",
-    price: 999,
+// const user = {
+//     username: "hitesh",
+//     price: 999,
 
-    welcomeMessage: function() {
-        console.log(`${this.username} , welcome to website`);
-        console.log(this);
-    }
+//     welcomeMessage: function() {
+//         console.log(`${this.username} , welcome to website`);
+//         console.log(this);
+//     }
 
-}
+// }
 
 // user.welcomeMessage()
 // user.username = "sam"
@@ -507,11 +507,11 @@ const user = {
 
 // Nullish Coalescing Operator (??): null undefined
 
-let val1;
-// val1 = 5 ?? 10
-// val1 = null ?? 10
-// val1 = undefined ?? 15
-val1 = null ?? 10 ?? 20
+// let val1;
+// // val1 = 5 ?? 10
+// // val1 = null ?? 10
+// // val1 = undefined ?? 15
+// val1 = null ?? 10 ?? 20
 
 
 
@@ -523,3 +523,253 @@ val1 = null ?? 10 ?? 20
 
 // const iceTeaPrice = 100
 // iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80")
+
+// ***************************************************** Iterations ************************************************************************
+
+// for
+
+// for (let i = 0; i <= 10; i++) {
+//     const element = i;
+//     if (element == 5) {
+//         //console.log("5 is best number");
+//     }
+    //console.log(element);
+    
+// }
+
+// console.log(element);
+
+// for (let i = 1; i <= 10; i++) {
+//     //console.log(`Outer loop value: ${i}`);
+//    for (let j = 1; j <= 10; j++) {
+    //console.log(`Inner loop value ${j} and inner loop ${i}`);
+    //console.log(i + '*' + j + ' = ' + i*j );
+//    }
+    
+// }
+// // let myArray = ["flash", "batman", "superman"]
+// //console.log(myArray.length);
+// for (let index = 0; index < myArray.length; index++) {
+//     const element = myArray[index];
+//     //console.log(element);
+    
+// }
+
+
+// break and continue
+
+// for (let index = 1; index <= 20; index++) {
+//     if (index == 5) {
+//         console.log(`Detected 5`);
+//         break
+//     }
+//    console.log(`Value of i is ${index}`);
+    
+// }
+
+// for (let index = 1; index <= 20; index++) {
+//     if (index == 5) {
+//         console.log(`Detected 5`);
+//         continue
+//     }
+//    console.log(`Value of i is ${index}`);
+    
+// }
+
+
+// let index = 0
+// while (index <= 10) {
+//     console.log(`Value of index is ${index}`);
+//     index = index + 2
+// }
+
+// let myArray = ['flash', "batman", "superman"]
+
+// let arr = 0
+// while (arr < myArray.length) {
+//     //console.log(`Value is ${myArray[arr]}`);
+//     arr = arr + 1
+// }
+
+// let score = 11
+
+// do {
+//     console.log(`Score is ${score}`);
+//     score++
+// } while (score <= 10);
+
+// ********************************************** Higher Order Loops ********************************************************
+
+// const myObject = {
+//     UP : "Lucknow",
+//     Haryana: "Chandigarh",
+//     Uttarakhand: "Dehradun",
+//     Rajasthan: "Jaipur"
+// }
+//console.log(myObject);
+
+// for(keys in myObject) {   //
+//    // console.log(keys);
+    
+// }
+// //UP Haryana Uttarakhand Rajasthan
+
+// for(values in myObject) {
+//     //console.log(myObject[values]); //Lucknow Chandigarh Dehradun Jaipur
+// }
+
+// for ...of loop
+
+// const myArr = [1,2,3,4,5]
+
+// for(values of myArr) {
+    //console.log(values); // 1 2 3 4 5
+// }
+
+// const myMap = new Map()
+
+// myMap.set("A",1);
+// myMap.set("B",2);
+// myMap.set("C",3);
+// myMap.set("D",4);
+
+// for(let key of myMap) {
+   // console.log(key);
+    
+// }
+//[ 'A', 1 ]
+// [ 'B', 2 ]
+// [ 'C', 3 ]
+// [ 'D', 4 ]
+
+
+// for(let key of myMap.keys()) {
+//    // console.log(key); //A B C D
+// }
+
+
+// for(let key of myMap.values()) {
+//    console.log(key);  // 1 2 3 4
+// }
+
+//for each loop :-
+
+// array.forEach((value, index, array) => {
+//   // your code here
+// });
+
+// const myArr = [1,2,3,4,5]
+
+// myArr.forEach(function(value,index) {
+//     console.log(`Value of index ${index} is ${value}`);
+// })
+// Value of index 0 is 1
+// Value of index 1 is 2
+// Value of index 2 is 3
+// Value of index 3 is 4
+// Value of index 4 is 5
+
+//*************************************************************************************************** */
+
+// const coding = ["js", "ruby", "java", "python", "cpp"]
+
+
+// const values = coding.forEach( (item) => {
+//     //console.log(item);
+//     // return item
+// } )
+
+// Q. What does .forEach() return in JavaScript?
+// .forEach() returns undefined.
+// It does NOT return a new array or any value.
+
+// console.log(values);
+
+// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// const newNums = myNums.filter( (num) => {
+//     return num > 4
+// } )
+
+// console.log(newNums); //5 6 7 8 9 10
+ 
+// const newNums = []
+
+// myNums.forEach( (num) => {
+//     if (num > 4) {
+//         newNums.push(num)
+//     }
+// } )
+
+
+
+
+// const books = [
+//     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+//     { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+//     { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+//     { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+//     { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+//     { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+//     { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+//     { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+//     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+//   ];
+
+//   let userBooks = books.filter( (bk) => bk.genre === 'History')
+
+// //   userBooks = books.filter( (bk) => { 
+// //     return bk.publish >= 1995 && bk.genre === "History"
+// //})
+//   console.log(userBooks);
+
+
+
+
+
+//   const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// // const newNums = myNumers.map( (num) => { return num + 10})
+
+// const newNums = myNumers
+//                 .map((num) => num * 10 )
+//                 .map( (num) => num + 1)
+//                 .filter( (num) => num >= 40)  //Chaining
+
+// console.log(newNums);
+
+
+// const myNums = [1, 2, 3]
+
+// const myTotal = myNums.reduce(function (acc, currval) {
+//     console.log(`acc: ${acc} and currval: ${currval}`);
+//     return acc + currval
+// }, 0)
+
+// const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+
+// console.log(myTotal);
+
+
+// const shoppingCart = [
+//     {
+//         itemName: "js course",
+//         price: 2999
+//     },
+//     {
+//         itemName: "py course",
+//         price: 999
+//     },
+//     {
+//         itemName: "mobile dev course",
+//         price: 5999
+//     },
+//     {
+//         itemName: "data science course",
+//         price: 12999
+//     },
+// ]
+
+// const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
+
+// console.log(priceToPay);
